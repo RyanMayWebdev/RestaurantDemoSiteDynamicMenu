@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restauraunt Demo Site</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/all.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div>
+            <img class="logo" src="https://i.pinimg.com/originals/92/d4/aa/92d4aa80f1ec1622fc1733bf448aa5ea.png"
+                alt="Sushi logo">
+        </div>
+
+        <ul class="navcontainer">
+            <li><a class="navlink" href="#home">Home</a></li>
+            <li><a class="navlink" href="#about">About Us</a></li>
+            <li><a class="navlink" href="#menu">Menu</a></li>
+            <li><a class="navlink" href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="mobilemenu">
+            <span class="fas fa-bars" id="menuDrop"></span>
+            <ul class="mobiledropdown mobileMenuHide">
+                <li><a class="navlink" href="#home">Home</a></li>
+                <li><a class="navlink" href="#about">About Us</a></li>
+                <li><a class="navlink" href="#menu">Menu</a></li>
+                <li><a class="navlink" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <div id="Main">
+        <div class="welcome" id="home">
+            <div class="welcome-box">
+                <h1 class="welcome-heading"><span class="redunderline">Ryan's Sushi</span></h1>
+                <h2 class="welcome-subheading">Sushi. Elevated.</h2>
+            </div>
+        </div>
+
+        <article class="article-container" id="menu">
+            <h2 class="section-headings"><span class="redunderline">Menu</span></h2>
+            <section class="menu-titles">
+                <ul class="menu-title-list">
+                    <li class="menuOption" id="appetizersLink">Appetizers</li>
+                    <li class="menuOption" id="entreesLink">Entrees</li>
+                    <li class="menuOption" id="rollsLink">Rolls</li>
+                    <li class="menuOption" id="dessertsLink">Desserts</li>
+                </ul>
+            </section>
+
+            <div class="invisible visible" id="appetizers">
+                <h2 class="selected-menu-title">Appetizers</h2>
+                <div class="menu-box" id = "menu-box-appetizers">
+
+                </div>
+            </div>
+            <div class="invisible" id="entrees">
+                <h2 class="selected-menu-title">Entrees</h2>
+                <div class="menu-box" id = "menu-box-entrees">
+
+                </div>
+            </div>
+            <div class="invisible" id="rolls">
+                <h2 class="selected-menu-title">Rolls</h2>
+                <div class="menu-box" id = "menu-box-rolls">
+                </div>
+            </div>
+            <div class="invisible" id="desserts">
+                <h2 class="selected-menu-title">Desserts</h2>
+                <div class="menu-box" id = "menu-box-desserts">
+                </div>
+            </div>
+        </article>
+
+
+        <article class="article-container">
+
+            <section class="content-container" id="location">
+                <h2 class="section-headings"><span class="redunderline">Location</span></h2>
+                <div id="map"></div>
+
+                <script
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7vtgKhVLoxHj5WG-HGXn02QNcpk7Yg6M&callback=initMap&libraries=&v=weekly"
+                    async></script>
+            </section>
+
+            <section id="hours">
+                <h2 class="section-headings"><span class="redunderline">Hours</span></h2>
+                <ul class="hours-list">
+                    <li>Mon: 4:00 pm - 9:00 pm</li>
+                    <li>Tue-Fri: 11:00 am - 9:00 pm</li>
+                    <li>Sat: 12:00 pm - 9:00 pm</li>
+                    <li>Sun: Closed</li>
+                </ul>
+            </section>
+
+            <section class="content-container" id="about">
+                <h2 class="section-headings"><span class="redunderline">About Us</span></h2>
+                <img class="about-img"
+                    src="https://www.justonecookbook.com/wp-content/uploads/2020/06/Dragon-Roll-0286-I-500x375.jpg"
+                    alt="dragon-roll-img">
+                <p>
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non metus purus. Nullam in purus sed
+                    enim eleifend bibendum vitae vel massa. Nulla et aliquam massa. Ut mattis ipsum eget ipsum euismod
+                    mollis.
+                    Maecenas massa mauris, vestibulum fermentum felis id, venenatis vestibulum mauris.
+                    Praesent eleifend lectus ultrices urna ullamcorper, vel vulputate mi faucibus.
+                    Cras fermentum libero et eleifend dictum. Cras lacus nibh, eleifend ut risus quis, accumsan
+                    efficitur
+                    ex.
+                    Mauris sit amet leo vel felis scelerisque bibendum non nec elit. Sed nec fringilla lectus.
+                    Integer dignissim, dolor sed tincidunt pulvinar, erat ligula pharetra ligula, et laoreet libero
+                    dolor a
+                    elit.
+
+                    Phasellus sit amet turpis luctus, dictum orci non, consectetur nulla. Suspendisse at tortor vitae
+                    tellus
+                    vulputate imperdiet eget et ipsum. Vestibulum iaculis, augue non lacinia sodales, dolor ligula
+                    ornare
+                    tellus, a tristique ipsum diam eu lacus.
+                    Suspendisse dapibus gravida quam. Nam purus tortor, ornare id urna vel, rutrum finibus lorem.
+                    Mauris porttitor erat in tempus tincidunt. Aenean aliquet consequat sem eleifend scelerisque.
+                    Duis euismod nibh non vulputate mattis. Integer cursus condimentum dignissim. Etiam ac pulvinar
+                    lacus.
+                    Pellentesque pharetra diam sit amet erat egestas iaculis.
+                    Morbi tellus mauris, vulputate sit amet tellus et, pretium sagittis velit. Pellentesque eget sodales
+                    neque.</p>
+            </section>
+        </article>
+        <article class="contact-container" id="contact">
+            <h2 class="section-headings">Contact Us</h2>
+            <p><span class="fas fa-phone"></span> 416-123-0123</p>
+            <div class="icons-container">
+                <span class="fab fa-facebook contact-icons"></span>
+                <span class="fab fa-instagram contact-icons"></span>
+            </div>
+        </article>
+    </div>
+    <script src="JavaScript/index.js" type="text/javascript"></script>
+</body>
+
+</html>
