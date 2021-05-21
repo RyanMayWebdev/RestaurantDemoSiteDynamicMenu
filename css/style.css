@@ -126,13 +126,14 @@ nav {
     width: 50px;
 }
 
+.mobileMenuHide {
+    visibility: hidden;
+}
+
 .mobileMenuReveal{
     visibility: visible;
 }
 
-.mobileMenuHide {
-    visibility: hidden;
-}
 .mobiledropdown {
     align-items: flex-start;
     background-color: black;

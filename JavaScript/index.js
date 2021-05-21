@@ -181,16 +181,29 @@ mapMenuItems(menuItemsAppetizers, menuPopulated, "appetizers");
 
 // Add click listening events to all of the menu page titles
 let menuId = "";
-let menuLinks = document.querySelectorAll(".menuOption");
-let navLinks = document.querySelectorAll(".navlink");
+const menuLinks = document.querySelectorAll(".menuOption");
+const navLinks = document.querySelectorAll(".navlink");
+const appetizerMenu = document.getElementById("appetizers");
+const entreeMenu = document.getElementById("entrees");
+const rollMenu = document.getElementById("rolls");
+const dessertMenu = document.getElementById("desserts");
 document.querySelector("#menuDrop").addEventListener("click", mobileMenuShow);
 
-for (let x = 0; x < menuLinks.length; x++) {
-  menuLinks[x].addEventListener("click", displayMenu);
+for (let link of menuLinks) {
+  link.addEventListener("click", displayMenu);
 }
 
-for (let x = 0; x < navLinks.length; x++) {
-  navLinks[x].addEventListener("click", mobileMenuHide);
+for (let link of navLinks) {
+  link.addEventListener("click", mobileMenuHide);
+}
+
+function mobileMenuShow() {
+  document.querySelector(".mobiledropdown").classList.toggle("mobileMenuReveal");
+  document.querySelector("#Main").addEventListener("click", mobileMenuHide);
+}
+
+function mobileMenuHide() {
+  document.querySelector(".mobiledropdown").classList.toggle("mobileMenuReveal");
 }
 
 
@@ -211,22 +224,11 @@ function displayMenu() {
       break;
   }
   menuPopulated[menuId] = "true";
-  document.getElementById("appetizers").classList.remove("visible");
-  document.getElementById("entrees").classList.remove("visible");
-  document.getElementById("rolls").classList.remove("visible");
-  document.getElementById("desserts").classList.remove("visible");
+  appetizerMenu.classList.remove("visible");
+  entreeMenu.classList.remove("visible");
+  rollMenu.classList.remove("visible");
+  dessertMenu.classList.remove("visible");
   document.getElementById(menuId).classList.toggle("visible");
-}
-
-function mobileMenuShow() {
-  document.querySelector(".mobiledropdown").classList.remove("mobileMenuHide");
-  document.querySelector(".mobiledropdown").classList.add("mobileMenuReveal");
-  document.querySelector("#Main").addEventListener("click", mobileMenuHide);
-}
-
-function mobileMenuHide() {
-  document.querySelector(".mobiledropdown").classList.add("mobileMenuHide");
-  document.querySelector(".mobiledropdown").classList.remove("mobileMenuReveal");
 }
 
 function mapMenuItems(arr, menuPopulated, menuId) {
