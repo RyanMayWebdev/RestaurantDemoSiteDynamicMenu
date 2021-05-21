@@ -2,9 +2,9 @@
 
 body {
     background-color: white;
+    font-family: 'Josefin Slab', serif;
     line-height: 1.5;
     margin: 0;
-    font-family: 'Josefin Slab', serif;
     text-align: center;
 
 }
@@ -38,29 +38,29 @@ p {
 /* Containers */
 
 .content-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     font-family: 'Josefin Slab', serif;
     font-size: 1.3em;
     line-height: 1.5;
-    width: 75%;
     margin: 0px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 75%;
 }
 
 .article-container {
-    height: 100%;
-    width: 75vw;
+    border-radius: 25px;
     color: black;
+    height: 100%;
     margin: 0 auto;
     padding: 75px 0;
-    border-radius: 25px;
+    width: 75vw;
 }
 
 .welcome-box {
+    background-color: rgba(161, 161, 161, 0.6);
     border:5px solid black;
     box-shadow: 0px 0px 1px black;
-    background-color: rgba(161, 161, 161, 0.6);
     
 }
 
@@ -74,39 +74,39 @@ p {
 }
 /*Navigation classes */
 nav {
-    width: 100%;
-    height: fit-content;
     background-color: black;
     box-shadow: 0px 0px 10px grey;
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    left: 0px;
     font-family: 'Josefin Slab', serif;
     font-size: 2em;
+    height: fit-content;
+    left: 0px;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    width: 100%;
     z-index: 10;
 
 }
 
 .navcontainer {
-    margin: 20px 0px;
-    height: max-content;
-    display: flex;
-    justify-content: flex-end;
     align-items: center;
+    display: flex;
+    height: max-content;
+    justify-content: flex-end;
     list-style-type: none;
+    margin: 20px 0px;
 }
 
 .logo {
+    display: inline;
     float: left;
     width: 100px;
-    display: inline;
 }
 
 .navlink {
+    color: #fff;
     padding: 20px 20px;
     text-decoration: none;
-    color: #fff;
 }
 
 
@@ -118,12 +118,12 @@ nav {
 /* Mobile nav menu, for tablet and below */
 .mobilemenu {
     display: none;
+    padding: 10px 20px;
     position: fixed;
+    right: 0px;
     text-align: center;
     top: 0px;
-    right: 0px;
     width: 50px;
-    padding: 10px 20px;
 }
 
 .mobileMenuReveal{
@@ -134,42 +134,42 @@ nav {
     visibility: hidden;
 }
 .mobiledropdown {
+    align-items: flex-start;
+    background-color: black;
+    box-shadow: 0px 0px 10px black;
+    color: white;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: space-evenly;
-    box-shadow: 0px 0px 10px black;
     list-style-type: none;
-    position: fixed;
-    background-color: black;
-    color: white;
     padding: 10px;
     padding-left: 20px;
+    position: fixed;
     right: 10px;
+    text-align: left;
     top: 45px;
     width: max-content;
-    text-align: left;
 }
 
 .fa-bars {
-    padding: 10px 0px 20px 30px;
     color: white;
+    padding: 10px 0px 20px 30px;
 }
 
 /*Welcome screen*/
 .welcome {
-    height: 60vh;
-    width: 100%;
-    margin: 60px auto;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
     background-image: url(https://images3.alphacoders.com/879/879538.jpg);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    justify-content: center;
+    margin: 60px auto;
+    text-align: center;
+    width: 100%;
 
 }
 
@@ -180,33 +180,33 @@ nav {
 
 .redunderline:after {
     border: none;
-    border-top: solid 4px red;
     border-radius: 50%;
-    content: "";
-    position: absolute;
+    border-top: solid 4px red;
     bottom: -13px;
-    left: 0;
+    content: "";
     height: 15px;
+    left: 0;
+    position: absolute;
     width: 100%;
 }
 
 /* Menu Section */
 
 .menu-title-list {
-    display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    list-style-type: none;
+    display: flex;
     font-family: 'Josefin Slab', serif;
     font-size: 1.5rem;
     font-weight: 600;
+    justify-content: space-evenly;
+    list-style-type: none;
     padding: 15px 0 50px;
 }
 
 .menuOption {
-    text-decoration: none;
     color: black;
     padding: 0 3px;
+    text-decoration: none;
 }
 
 .menuOption:hover {
@@ -217,19 +217,16 @@ nav {
 
 
 .menu-box {
-    display: flex;
     align-self: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    display: flex;
     flex-shrink: 0;
-
-    margin:0 auto;
-    height: fit-content;
-    width: 60%;
-
-
+    flex-wrap: wrap;
     font-family: 'Josefin Slab', serif;
+    height: fit-content;
+    justify-content: space-evenly;
+    margin:0 auto;
     text-align: center;
+    width: 60%;
 }
 
 .menu-box div {
@@ -321,7 +318,7 @@ nav {
 
 @media (max-width:425px) {
     .welcome-heading {
-        width: 70%;
         font-size: 3.5rem;
+        width: 70%;
     }
 }
