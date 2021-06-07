@@ -317,7 +317,7 @@ nav {
 }
 
 
-@media (max-width:425px) {
+@media (max-width:550px) {
     .menu-title-list{
         flex-direction: column;
     }
