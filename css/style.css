@@ -318,6 +318,16 @@ nav {
 
 
 @media (max-width:425px) {
+    .menu-title-list{
+        flex-direction: column;
+    }
+    .menu-box {
+        width: 90%;
+    }
+
+    .menu-box div {
+        width: 100%;
+    }
     .welcome-heading {
         font-size: 3.5rem;
         width: 70%;

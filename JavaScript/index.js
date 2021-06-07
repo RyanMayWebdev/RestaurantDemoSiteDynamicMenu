@@ -187,7 +187,7 @@ const appetizerMenu = document.getElementById("appetizers");
 const entreeMenu = document.getElementById("entrees");
 const rollMenu = document.getElementById("rolls");
 const dessertMenu = document.getElementById("desserts");
-document.querySelector("#menuDrop").addEventListener("click", mobileMenuShow);
+document.getElementById("menuDrop").addEventListener("click", mobileMenuShow);
 
 for (let link of menuLinks) {
   link.addEventListener("click", displayMenu);
@@ -199,7 +199,6 @@ for (let link of navLinks) {
 
 function mobileMenuShow() {
   document.querySelector(".mobiledropdown").classList.toggle("mobileMenuReveal");
-  document.querySelector("#Main").addEventListener("click", mobileMenuHide);
 }
 
 function mobileMenuHide() {
