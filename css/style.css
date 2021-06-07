@@ -333,3 +333,9 @@ nav {
         width: 70%;
     }
 }
+
+@media (max-height:850px) and (orientation:landscape){
+    .welcome {
+        height: 125vh;
+    }
+}
