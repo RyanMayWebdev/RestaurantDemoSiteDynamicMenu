@@ -45,7 +45,6 @@ p {
     font-size: 1.3em;
     line-height: 1.5;
     margin: 0px auto;
-    width: 75%;
 }
 
 .article-container {
@@ -166,7 +165,7 @@ nav {
     background-size: cover;
     display: flex;
     flex-direction: column;
-    height: 60vh;
+    height: 95vh;
     justify-content: center;
     margin: 60px auto;
     text-align: center;
