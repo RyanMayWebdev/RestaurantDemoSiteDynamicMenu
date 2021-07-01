@@ -6,7 +6,7 @@ body {
     line-height: 1.5;
     margin: 0;
     text-align: center;
-
+    
 }
 
 p {
@@ -82,7 +82,7 @@ nav {
     position: fixed;
     right: 0px;
     top: 0px;
-    width: 100%;
+    width: 100vw;
     z-index: 10;
 
 }
@@ -93,7 +93,7 @@ nav {
     height: max-content;
     justify-content: flex-end;
     list-style-type: none;
-    margin: 20px 0px;
+    margin: 20px 10px;
 }
 
 .logo {
